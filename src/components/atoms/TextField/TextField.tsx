@@ -8,7 +8,7 @@ export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   additionalInputClassNames?: string;
   additionalLabelClassNames?: string;
   errorText?: string;
-  value: any;
+  value: string;
   name: string;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
