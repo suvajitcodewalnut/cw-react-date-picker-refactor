@@ -12,7 +12,7 @@ export function Header() {
     <header className="fixed top-0 z-50 w-full bg-black p-0.5 shadow-md dark:bg-gray-900 dark:focus:ring-gray-600">
       <nav className="relative mx-14 mt-[2px] flex h-[65px] items-center justify-between lg:h-[60px]">
         <Image
-          className="cursor-pointer"
+          className="cursor-pointer h-auto"
           onClick={handleOnClickLogo}
           src="/svg/codewalnut_logo.svg"
           alt="cw-logo"
