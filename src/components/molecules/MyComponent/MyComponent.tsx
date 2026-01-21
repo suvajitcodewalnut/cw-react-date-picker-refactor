@@ -4,6 +4,7 @@ export function MyComponent() {
   const endDateLimit = new Date();
   endDateLimit.setDate(endDateLimit.getDate() + 30);
   return (
+    <div className="">
       <CodewalnutCustomDatePicker
         isEndDate
         startDatePlaceHolder="Start Date"
@@ -12,5 +13,6 @@ export function MyComponent() {
         endDateLimit={endDateLimit}
         markSundayAsRed
       />
+    </div>
   );
 }
