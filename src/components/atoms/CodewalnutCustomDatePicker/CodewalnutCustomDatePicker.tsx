@@ -58,7 +58,7 @@ export function CodewalnutCustomDatePicker({
       <span className="text-sm font-semibold whitespace-nowrap absolute -top-3 left-3 px-1 bg-white text-black text-opacity-60">
         {startDateLabel}
       </span>
-      <button type="button" aria-label="Select departure date">
+      <div role="group" aria-label="Select departure date">
         <DatePicker
           dayClassName={(date) =>
             clsx(
@@ -97,14 +97,14 @@ export function CodewalnutCustomDatePicker({
             );
           }}
         />
-      </button>
+      </div>
       {isEndDate && (
         <>
           <span className="w-1 border-2 border-red-500 mr-3 md:mr-5 ml-1 md:ml-3" />
           <span className="text-sm font-semibold whitespace-nowrap absolute -top-3 right-3 px-1 bg-white text-black text-opacity-60">
             {endDateLabel}
           </span>
-          <button type="button" aria-label="Select departure date">
+          <div role="group" aria-label="Select return date">
             <DatePicker
               dayClassName={(date) =>
                 date.getDay() === 0 && markSundayAsRed ? "!text-red-500 " : ""
@@ -140,7 +140,7 @@ export function CodewalnutCustomDatePicker({
                 );
               }}
             />
-          </button>
+          </div>
         </>
       )}
     </div>
